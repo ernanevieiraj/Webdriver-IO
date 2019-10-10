@@ -1,0 +1,11 @@
+var fs = require('fs');
+let contents = [];
+contents = fs.readFileSync('D:\\cdm_mfcoke\\branches\\forcaTarefa\\wdio\\test\\e2e\\data\\json.json', 'utf8');
+const student = JSON.parse(contents);
+console.log(contents);
+console.log(student[0].title);
+console.log(student[0].nome);
+console.log(student[1].title);
+console.log(student[1].nome);
+console.log(student[0]);
+console.log(student[1]);
